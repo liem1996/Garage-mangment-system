@@ -20,6 +20,9 @@ public interface RetrofitInterface {
     @GET("/getVeicles")
     Call<List<Vehicle>> getVeicles();
 
+    @POST("/addNewVehicle")
+    Call<Vehicle> addNewVehicle(@Body Map<String, Object> map);
+
 /*
     getVeicles,
     addNewVehicle,
